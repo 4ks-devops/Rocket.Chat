@@ -1,6 +1,6 @@
-import { Locator, Page } from '@playwright/test';
+import { Page } from '@playwright/test';
 
-import { AccountSidebar } from './fragments';
+import { AccountSidebar } from './slices';
 
 export class AccountProfile {
 	private readonly page: Page;
@@ -11,21 +11,5 @@ export class AccountProfile {
 		this.page = page;
 
 		this.sidebar = new AccountSidebar(page);
-	}
-
-	get inputName(): Locator {
-		return this.page.locator('//label[contains(text(), "Name")]/..//input');
-	}
-
-	get inputUsername(): Locator {
-		return this.page.locator('//label[contains(text(), "Username")]/..//input');
-	}
-
-	get btnSubmit(): Locator {
-		return this.page.locator('[data-qa="AccountProfilePageSaveButton"]');
-	}
-
-	get btnClose(): Locator {
-		return this.page.locator('//*[contains(@class,"flex-nav")]//i[contains(@class, "rcx-icon--name-cross")]');
 	}
 }

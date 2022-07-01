@@ -70,6 +70,7 @@ export class Auth {
 	}
 
 	async doLogin(input = ADMIN_CREDENTIALS): Promise<void> {
+<<<<<<< HEAD
 		await this.page.goto('/');
 
 		await this.page.locator('[name=emailOrUsername]').type(input.email);
@@ -88,4 +89,12 @@ export class Auth {
 		await this.btnSubmit.click();
 		await this.btnRegisterConfirmUsername.click();
 	}
+=======
+		await this.page.goto('/home');
+
+		await this.page.locator('[name=email]').type(input.email);
+		await this.page.locator('[name=pass]').type(input.password);
+		await this.page.locator('.login').click();
+	}
+>>>>>>> feat: add locators, actions and update tests
 }
