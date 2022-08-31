@@ -101,7 +101,7 @@
 		"@types/he": "^1.1.2",
 		"@types/imap": "^0.8.35",
 		"@types/jsdom": "^16.2.14",
-		"@types/jsdom-global": "^3.0.2",
+		"@types/jsdom-global": "^3.0.3",
 		"@types/jsrsasign": "^9.0.3",
 		"@types/ldapjs": "^2.2.2",
 		"@types/less": "^3.0.3",
