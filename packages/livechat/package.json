@@ -23,7 +23,7 @@
 		"build-storybook": "build-storybook"
 	},
 	"devDependencies": {
-		"@babel/preset-env": "^7.18.2",
+		"@babel/preset-env": "^7.20.2",
 		"@rocket.chat/eslint-config": "^0.4.0",
 		"@rocket.chat/fuselage-tokens": "~0.31.14",
 		"@rocket.chat/logo": "~0.31.14",
